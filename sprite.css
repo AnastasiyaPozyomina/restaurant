@@ -1,0 +1,97 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-001 small {
+  background-image: url(sprite.png);
+  background-position: -120px -48px;
+  width: 14px;
+  height: 15px;
+}
+.icon-Orange-line {
+  background-image: url(sprite.png);
+  background-position: 0px -24px;
+  width: 247px;
+  height: 24px;
+}
+.icon-Youtube-orange {
+  background-image: url(sprite.png);
+  background-position: -18px -63px;
+  width: 18px;
+  height: 21px;
+}
+.icon-cards {
+  background-image: url(sprite.png);
+  background-position: 0px -48px;
+  width: 120px;
+  height: 15px;
+}
+.icon-facebook orange {
+  background-image: url(sprite.png);
+  background-position: 0px -101px;
+  width: 10px;
+  height: 20px;
+}
+.icon-facebook small {
+  background-image: url(sprite.png);
+  background-position: -74px -63px;
+  width: 9px;
+  height: 16px;
+}
+.icon-facebook-white {
+  background-image: url(sprite.png);
+  background-position: -10px -101px;
+  width: 10px;
+  height: 20px;
+}
+.icon-twitter orange {
+  background-image: url(sprite.png);
+  background-position: -36px -63px;
+  width: 19px;
+  height: 16px;
+}
+.icon-twitter small {
+  background-image: url(sprite.png);
+  background-position: -134px -48px;
+  width: 15px;
+  height: 13px;
+}
+.icon-twitter-white {
+  background-image: url(sprite.png);
+  background-position: -55px -63px;
+  width: 19px;
+  height: 16px;
+}
+.icon-white-line {
+  background-image: url(sprite.png);
+  background-position: 0px 0px;
+  width: 247px;
+  height: 24px;
+
+}
+.icon-youtube small {
+  background-image: url(sprite.png);
+  background-position: 0px -84px;
+  width: 15px;
+  height: 17px;
+}
+.icon-youtube-white {
+  background-image: url(sprite.png);
+  background-position: 0px -63px;
+  width: 18px;
+  height: 21px;
+}

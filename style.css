@@ -1,0 +1,168 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 1600px;
+
+}
+
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+header {
+  background: url(img/bg-header.png) no-repeat;
+  height: 750px;
+}
+
+/* меню */
+.navbar {
+  display: flex;
+width: 100%;
+}
+
+.top-menu {
+  margin-left: 217px;
+}
+
+.menu-main {
+  display: flex;
+  list-style: none;
+}
+.menu-main li {
+  padding:45px 23px 45px 23px;
+}
+a {
+  text-decoration: none;
+  /*убираем подчеркивание текста ссылок*/
+  color: rgba(255, 255, 255, 0.922);
+}
+
+/* Шрифт */
+h1 {
+  font-size: 90px;
+  font-family: "YesevaOne";
+  color: rgba(255, 255, 255, 0.922);
+  text-align: center;
+  text-shadow: 0px 1px 2px rgba(1, 1, 1, 0.64);
+  font-weight: 800;
+  padding:116px 140px 38px 140px;
+}
+
+.orange h2 {
+  font-size: 36px;
+  font-family: "YesevaOne";
+  color: rgb(204, 153, 0);
+  line-height: 0.667;
+  text-align: center;
+}
+
+.orange p {
+  font-size: 16px;
+  font-family: "Lato";
+  color: rgb(76, 76, 76);
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.white h2 {
+  font-size: 36px;
+  font-family: "YesevaOne";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: center;
+}
+
+.white p {
+  font-size: 16px;
+  font-family: "Lato";
+  color: rgb(255, 255, 255);
+  line-height: 1.5;
+  text-align: center;
+}
+
+.about {
+  background: url(img/bg-about.png) no-repeat;
+  padding: 68px 92px 0 110px;
+  text-align: center;
+}
+
+.about-wrapper {
+  display: flex;
+}
+
+.ingredients {
+  background: url(img/bg-ingredients.png) no-repeat;
+  padding: 167px 175px 342px 857px;
+}
+
+.menu-list {
+  background: url(img/bg-about.png) no-repeat;
+  padding: 100px 110px 100px 110px;
+}
+
+.reviews {
+  background: url(img/bg-reviews.png) no-repeat;
+  padding: 155px 381px 194px 473px;
+}
+
+.reservations {
+  background: url(img/bg-about.png) no-repeat;
+  padding: 99px 110px 103px 40px;
+}
+
+.reservations-wrapper {
+  display: flex;
+}
+
+.wrapper-form {
+  display: flex;
+}
+
+.decoration {
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+}
+
+/* кнопки */
+.btn-header {
+  text-align: center;
+}
+
+.btn-white {
+  font-size: 18px;
+  font-family: "Lato";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: center;
+  width: 125px;
+  height: 13px;
+  border-width: 1px;
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+  background-color: rgba(255, 255, 255, 0.278);
+  opacity: 0.702;
+  padding: 10px;
+}
+
+.btn-reservations {
+  border-width: 1px;
+  border-color: rgb(200, 159, 45);
+  border-style: solid;
+  background-color: rgba(200, 159, 45, 0.98);
+  color: white;
+}
+
+/* иконки */
+.social {
+  display: flex;
+  padding:40px 40px 35px 30px;
+}
+
+.social a {
+  margin-right:25px ;
+}
