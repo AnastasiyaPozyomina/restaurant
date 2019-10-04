@@ -1,25 +1,37 @@
 html,
 body {
   margin: 0;
-  padding: 0;
   max-width: 1600px;
 
 }
+
 
 .container {
   max-width: 1250px;
   margin: 0 auto;
 }
-
 header {
   background: url(img/bg-header.png) no-repeat;
   height: 750px;
+
 }
+
 
 /* меню */
 .navbar {
+  left:0;
   display: flex;
 width: 100%;
+height: 100px;
+position: fixed;
+top: 0;
+background: url(img/bg-header.png) no-repeat;
+overflow: hidden;
+}
+
+.navbar-logo {
+  margin-left: 173px;
+  padding: 5px;
 }
 
 .top-menu {
@@ -32,6 +44,9 @@ width: 100%;
 }
 .menu-main li {
   padding:45px 23px 45px 23px;
+ font-family: 'Gentium Book Basic', serif;
+ font-weight:700px;
+ font-size: 21px;
 }
 a {
   text-decoration: none;
@@ -50,12 +65,16 @@ h1 {
   padding:116px 140px 38px 140px;
 }
 
+h2 {
+  padding-top: 30px;
+}
 .orange h2 {
   font-size: 36px;
   font-family: "YesevaOne";
   color: rgb(204, 153, 0);
   line-height: 0.667;
   text-align: center;
+  
 }
 
 .orange p {
@@ -85,8 +104,9 @@ h1 {
 
 .about {
   background: url(img/bg-about.png) no-repeat;
-  padding: 68px 92px 0 110px;
+  padding: 100px 92px 0 110px;
   text-align: center;
+
 }
 
 .about-wrapper {
@@ -96,13 +116,50 @@ h1 {
 .ingredients {
   background: url(img/bg-ingredients.png) no-repeat;
   padding: 167px 175px 342px 857px;
+
 }
 
 .menu-list {
   background: url(img/bg-about.png) no-repeat;
   padding: 100px 110px 100px 110px;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  height: 100%;
+  padding-left:288px;
+  padding-right:281px; 
 }
 
+.appetisers,
+.salads,
+.starters,
+.main-dishes {
+margin-left: 20px;
+ 
+}
+
+
+.title-food {
+  color: rgb(204, 153, 0);
+  font-family: "YesevaOne";
+  font-size: 21px;
+  border-bottom: 0.5px solid rgb(204, 153, 0);
+}
+.price {
+  color: rgb(204, 153, 0);
+  font-family: "YesevaOne";
+  font-size: 21px;
+  border-bottom: 0.5px solid rgb(204, 153, 0);
+}
+.main-dishes {
+  margin-top: -20px;
+}
+
+td {
+  padding-top: 10px;
+  font-family: "Lato";
+
+}
 .reviews {
   background: url(img/bg-reviews.png) no-repeat;
   padding: 155px 381px 194px 473px;
@@ -118,7 +175,8 @@ h1 {
 }
 
 .wrapper-form {
-  display: flex;
+  
+ 
 }
 
 .decoration {
@@ -127,6 +185,8 @@ h1 {
   margin-bottom: 30px;
 
 }
+
+ 
 
 /* кнопки */
 .btn-header {
@@ -149,6 +209,10 @@ h1 {
   padding: 10px;
 }
 
+.btn-white:hover {
+  background-color: #282019;
+}
+
 .btn-reservations {
   border-width: 1px;
   border-color: rgb(200, 159, 45);
@@ -160,9 +224,29 @@ h1 {
 /* иконки */
 .social {
   display: flex;
-  padding:40px 40px 35px 30px;
+  margin:45px 40px 35px 30px;
 }
 
 .social a {
   margin-right:25px ;
+}
+
+.booking {
+  margin-left:100px;
+}
+
+#name,
+#date {
+  margin-right:30px;
+}
+
+
+footer {
+  background-color: #191919;
+  color: #fefefe;
+
+}
+
+main {
+  top: 100px;
 }

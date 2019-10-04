@@ -40,7 +40,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 120px;
   height: 15px;
 }
-.icon-facebook orange {
+.icon-facebook-orange {
   background-image: url(sprite.png);
   background-position: 0px -101px;
   width: 10px;
@@ -58,7 +58,15 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 10px;
   height: 20px;
 }
-.icon-twitter orange {
+
+.icon-facebook-white:hover{
+  background-image: url(sprite.png);
+  background-position: 0px -101px;
+  width: 10px;
+  height: 20px;
+
+}
+.icon-twitter-orange {
   background-image: url(sprite.png);
   background-position: -36px -63px;
   width: 19px;
@@ -76,6 +84,15 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 19px;
   height: 16px;
 }
+
+.icon-twitter-white:hover{
+  background-image: url(sprite.png);
+  background-position: -36px -63px;
+  width: 19px;
+  height: 16px;
+  
+}
+
 .icon-white-line {
   background-image: url(sprite.png);
   background-position: 0px 0px;
@@ -94,4 +111,12 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   background-position: 0px -63px;
   width: 18px;
   height: 21px;
+}
+
+.icon-youtube-white:hover{
+  background-image: url(sprite.png);
+  background-position: -18px -63px;
+  width: 18px;
+  height: 21px; 
+  
 }
