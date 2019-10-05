@@ -1,6 +1,6 @@
 html,
 body {
- 
+
   scroll-behavior: smooth;
 
 }
@@ -8,9 +8,10 @@ body {
 .container {
   max-width: 1250px;
   margin: 0 auto;
-  margin-bottom: ;
- 
+
+
 }
+
 header {
   background: url(img/bg-header.png) no-repeat;
   height: 750px;
@@ -20,11 +21,11 @@ header {
 
 /* меню */
 .navbar {
-overflow: hidden;
-display: flex;
-width: 100%;
-height: 100px;
-background: url(img/bg-header.png) no-repeat;
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+  height: 100px;
+  background: url(img/bg-header.png) no-repeat;
 }
 
 
@@ -35,6 +36,7 @@ background: url(img/bg-header.png) no-repeat;
   width: 100%;
   z-index: 1000;
 }
+
 .navbar-logo {
   margin-left: 173px;
   padding: 5px;
@@ -43,29 +45,57 @@ background: url(img/bg-header.png) no-repeat;
 .navbar-logo:hover {
   transform: scale(0.8);
 }
+
 .top-menu {
   margin-left: 217px;
+}
+
+.menu {
+  background: url(img/menu-Background.png);
+  background-size: cover;
+  padding: 100px 110px 100px 110px;
+  width: 100%;
+
+}
+
+.menu-list {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-left: 288px;
+  padding-right: 281px;
+
+}
+
+.appetisers,
+.salads,
+.starters,
+.main-dishes {
+  margin-left: 20px;
+
 }
 
 .menu-main {
   display: flex;
   list-style: none;
 }
+
 .menu-main li {
-  padding:45px 23px 45px 23px;
- font-family: 'Gentium Book Basic', serif;
- font-weight:700px;
- font-size: 21px;
- margin-bottom: 10px;
+  padding: 45px 23px 45px 23px;
+  font-family: 'Gentium Book Basic', serif;
+  font-weight: 700px;
+  font-size: 21px;
+  margin-bottom: 10px;
 }
 
 .menu-main li:hover {
- border-top: #fefefe 2px solid;
- font-weight: bold;
- transform: scale(0.8);
+  border-top: #fefefe 2px solid;
+  font-weight: bold;
+  transform: scale(0.8);
 
 
 }
+
 a {
   text-decoration: none;
   /*убираем подчеркивание текста ссылок*/
@@ -80,19 +110,20 @@ h1 {
   text-align: center;
   text-shadow: 0px 1px 2px rgba(1, 1, 1, 0.64);
   font-weight: 800;
-  padding:120px 140px 38px 140px;
+  padding: 120px 140px 38px 140px;
 }
 
 h2 {
   padding-top: 30px;
 }
+
 .orange h2 {
   font-size: 36px;
   font-family: "YesevaOne";
   color: rgb(204, 153, 0);
   line-height: 0.667;
   text-align: center;
-  
+
 }
 
 .orange p {
@@ -135,52 +166,87 @@ h2 {
 }
 
 .about-col {
-  padding-top:100px;
+  padding-top: 100px;
+}
+
+.plate-img {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+
+
+}
+
+@keyframes plate-img {
+  0% {
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes earth {
+  0% {
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
 }
 
 .ingredients {
   background: url(img/bg-ingredients.png) no-repeat;
- background-size: cover;
- padding-top:100px;
- padding-bottom:100px;
-margin-bottom: -10px;
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-bottom: -10px;
 }
 
-.ingredients-wrapper{
+.ingredients p {
+  font-size: 16px;
+  font-family: "Lato";
+  color: rgb(255, 255, 255);
+  line-height: 1.5;
+  text-align: center;
+}
+
+.ingredients-wrapper {
   background-color: rgb(0, 0, 0);
   opacity: 0.671;
-  margin:100px 40px 101px 640px;
-  padding:78px 70px 72px 70px;
-
+  margin: 100px 40px 101px 640px;
+  padding: 50px 70px 72px 70px;
+position: relative;
 }
 
 .ingredient-image {
-margin-top:;
-margin:53px 0 0 0;
+
+  margin: 53px 0 0 0;
 }
+
 .ingredient-image img {
-  margin-right:29px;
+  margin-right: 29px;
+  
 }
 
-.menu-list {
-  background: url(img/bg-about.png) no-repeat;
-  padding: 100px 110px 100px 110px;
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  height: 100%;
-  padding-left:288px;
-  padding-right:281px; 
-}
 
-.appetisers,
-.salads,
-.starters,
-.main-dishes {
-margin-left: 20px;
- 
-}
+.popup-text-ingredients {
+ position: absolute;
+top:336px;
+display: none;
+margin-left:100px;
 
+
+
+}
 
 .title-food {
   color: rgb(204, 153, 0);
@@ -188,12 +254,14 @@ margin-left: 20px;
   font-size: 21px;
   border-bottom: 0.5px solid rgb(204, 153, 0);
 }
+
 .price {
   color: rgb(204, 153, 0);
   font-family: "YesevaOne";
   font-size: 21px;
   border-bottom: 0.5px solid rgb(204, 153, 0);
 }
+
 .main-dishes {
   margin-top: -20px;
 }
@@ -203,22 +271,69 @@ td {
   font-family: "Lato";
 
 }
+
 .reviews {
-  background: url(img/bg-reviews.png) no-repeat;
-  padding: 155px 381px 194px 473px;
+  background: url(img/reviews-bg.png) no-repeat;
+  padding: 100px 240px 100px 240px;
+
+}
+
+.reviews p {
+  font-size: 25px;
+  font-family: "GentiumBookBasic";
+  color: rgb(221, 224, 223);
+  font-weight: bold;
+  line-height: 1.8;
+  text-align: center;
+}
+.reviews p:last-child{
+padding-top:33px; 
+}
+
+.quote {
+  padding-bottom: 13.5px;
+  padding-right: 30px;
+}
+
+.reviews-wrapper {
+  background-color: rgb(0, 0, 0);
+  padding: 74.89px 70px 96.96px 35px;
+  opacity: 0.671;
 }
 
 .reservations {
-  background: url(img/bg-about.png) no-repeat;
-  padding: 99px 110px 103px 40px;
+  background: url(img/background-reservations.png) no-repeat;
+  background-size: cover;
+  padding: 95px 110px 103px 39px;
+
 }
 
 .reservations-wrapper {
   display: flex;
+  flex-direction: row;
+}
+
+.reservations-wrapper h2 {
+  padding-top:0;
 }
 
 
+.wrapper-form {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-top:44px;
+  padding-left: 0;
+}
 
+input {
+  margin-top: 10px;
+  width: 40%;
+ ;
+}
+label {
+padding-top: 3px;
+}
 .decoration {
   margin: 0 auto;
   margin-top: 30px;
@@ -226,7 +341,7 @@ td {
 
 }
 
- 
+
 
 /* кнопки */
 .btn-header {
@@ -266,20 +381,20 @@ td {
 /* иконки */
 .social {
   display: flex;
-  margin:45px 40px 35px 30px;
+  margin: 45px 40px 35px 30px;
 }
 
 .social a {
-  margin-right:25px ;
+  margin-right: 25px;
 }
 
 .booking {
-  margin-left:100px;
+  margin-left: 100px;
 }
 
 #name,
 #date {
-  margin-right:30px;
+  margin-right: 30px;
 }
 
 
@@ -289,14 +404,15 @@ footer {
 
 }
 
-/* якоря */
-.about,
+
+
+/* .about,
+.menu,
 .ingredients,
-.menu-list,
 .reviews,
 .reservations {
 padding-top: 100px;
 margin-top: -100px;
 -webkit-background-clip: content-box;
 background-clip: content-box;
-}
+} */
