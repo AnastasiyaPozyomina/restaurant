@@ -16,7 +16,7 @@
 <body>
     <header class="header white" id="home">
         <div class="navbar" id="navbar">
-            <a href="#home"> <img class="navbar-logo" src="img/Logo.png" alt="logo"></a>
+            <a href="index.html"> <img class="navbar-logo" src="img/Logo.png" alt="logo"></a>
             <nav class="top-menu">
                 <ul class="menu-main">
                     <li><a href="#home">Home</a></li>
@@ -63,6 +63,7 @@
 
     <section class="ingredients white" id="ingredients">
         <div class="container ">
+            <div class="video"><iframe width="560" height="415" src="https://www.youtube.com/embed/3wGO2Z_Zl-I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
             <div class="ingredients-wrapper">
                 <h2>Fine ingredients</h2>
                 <div class="icon-white-line decoration"></div>
@@ -229,7 +230,7 @@
 
     <section class="reservations orange" id="reservation">
         <div class="reservations-wrapper container">
-            <div class="reservations-images"><img src="img/reservations-img.png" alt=""></div>
+            <picture class="reservations-images"><img src="img/reservations-img.png" alt=""></picture>
             <div class="booking">
                 <h2>Just the right food</h2>
                 <div class="icon-Orange-line decoration"></div>
@@ -243,11 +244,11 @@
                     out! Perfect materials and freshly baked food.</p>
 
                 <form class="wrapper-form" action="" id="booking-form">
-                    <label for="name">Name <input type="text" id="name" required placeholder="your name"></label>
-                    <label for="email">Email<input type="email" id="your email" required placeholder="email"></label>
-                    <label for="date"> Date<input type="date" id="date" placeholder="date"></label>
-                    <label for="number"></label> id="label-number">Party number<input type="number" min="0" max="100"
-                        step="1" id="number" placeholder="party number"></label>
+                    <label for="name">Name </label><input type="text" id="name" required placeholder="your name">
+                    <label for="email">Email</label><input type="email" id="your email" required placeholder="email">
+                    <label for="date"> Date</label><input type="date" id="date" placeholder="date">
+                    <label for="number" id="label-number">Party number</label><input type="number" min="0" max="100"
+                        step="1" id="number" placeholder="party number">
                 </form>
                 <button class="btn-reservations" type="submit" id="booking-form">Book rows!</button>
             </div>
