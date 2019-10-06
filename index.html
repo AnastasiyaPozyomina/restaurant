@@ -63,7 +63,9 @@
 
     <section class="ingredients white" id="ingredients">
         <div class="container ">
-            <div class="video"><iframe width="560" height="415" src="https://www.youtube.com/embed/3wGO2Z_Zl-I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <div class="video"><iframe width="560" height="415" src="https://www.youtube.com/embed/3wGO2Z_Zl-I"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></div>
             <div class="ingredients-wrapper">
                 <h2>Fine ingredients</h2>
                 <div class="icon-white-line decoration"></div>
@@ -89,7 +91,6 @@
         </div>
     </section>
     <section class="menu" id="menu">
-
         <div class="menu-list orange">
             <div class="appetisers">
                 <h2>Appetisers</h2>
@@ -244,39 +245,58 @@
                     out! Perfect materials and freshly baked food.</p>
 
                 <form class="wrapper-form" action="" id="booking-form">
-                    <label for="name">Name </label><input type="text" id="name" required placeholder="your name">
-                    <label for="email">Email</label><input type="email" id="your email" required placeholder="email">
-                    <label for="date"> Date</label><input type="date" id="date" placeholder="date">
-                    <label for="number" id="label-number">Party number</label><input type="number" min="0" max="100"
-                        step="1" id="number" placeholder="party number">
+                    <div class="form-col">
+                        <div>
+                            <label for="name">Name <input type="text" id="name" required
+                                    placeholder="your name"></label>
+                            <label for="date"> Date <input type="date" id="date" required placeholder="date"></label>
+                        </div>
+                        <div>
+                            <label for="email">Email<input type="email" id="your email" required
+                                    placeholder="email"></label>
+                            <label for="number" id="label-number">Party number<input type="number" min="0" max="12"
+                                    step="1" required id="number" placeholder="party number"></label>
+                        </div>
+                    </div>
+                    <button class="btn-reservations" type="submit" id="booking-form">Book now!</button>
                 </form>
-                <button class="btn-reservations" type="submit" id="booking-form">Book rows!</button>
+
             </div>
         </div>
     </section>
 
     <footer class="footer">
-        <div class="about">
-            <div class="icon-white-line">
-                <div>
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-about-us">
                     <h3>About Us</h3>
-                    <p>Lambda's new and expanded Chelsea location represents a truly authentic Greek patisserie,
+                    <div class="icon-white-line"></div>
+                    <p>Lambda's new and expanded Chelsea location represents a truly authentic <span>Greek</span> patisserie,
                         featuring
                         breakfasts of fresh croissants and steaming bowls of café.
                         Lamda the best restaurant in town</p>
                 </div>
                 <div class="time-work">
                     <h3>Opening Hours</h3>
-                    <p>Mon-Thu: 7:00am-8:00pm </p>
-                    <p> Fri-Sun: 7:00am-10:00pm</p>
+                    <div class="icon-white-line"></div>
+                    <p><span>Mon-Thu:</span> 7:00am-8:00pm </p>
+                    <p><span>Fri-Sun:</span>  7:00am-10:00pm</p>
+                    <p class="icon-cards"></p>
                 </div>
-                <div class="Our location">
-                    <h3>OUR LOCATION</h3>
-                    <p>19th Paradise Street Sitia
-                        128 Meserole Avenue</p>
-
-
+                <div class="our-location">
+                    <h3>Our location</h3>
+                    <div class="icon-white-line"></div>
+                    <p><span>19th Paradise Street Sitia
+                        128 Meserole Avenue</span></p>
+<div class="footer-social">
+    <p class="icon-facebook-small"></p>
+    <p class="icon-youtube-small"></p>
+    <p class="icon-twitter-small"></p>
+    <p class="icon-001-small"></p>
+    
+</div>
                 </div>
+            </div>
     </footer>
     <script src="js.js"></script>
 </body>

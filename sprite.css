@@ -16,7 +16,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 // HTML
 <i class="icon icon-home"></i>
 */
-.icon-001 small {
+.icon-001-small {
   background-image: url(sprite.png);
   background-position: -120px -48px;
   width: 14px;
@@ -39,6 +39,8 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   background-position: 0px -48px;
   width: 120px;
   height: 15px;
+  margin-left:61.39px;
+  margin-top:47.99px;
 }
 .icon-facebook-orange {
   background-image: url(sprite.png);
@@ -46,11 +48,12 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 10px;
   height: 20px;
 }
-.icon-facebook small {
+.icon-facebook-small {
   background-image: url(sprite.png);
   background-position: -74px -63px;
   width: 9px;
   height: 16px;
+  margin-right:11px;
 }
 .icon-facebook-white {
   background-image: url(sprite.png);
@@ -72,11 +75,12 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 19px;
   height: 16px;
 }
-.icon-twitter small {
+.icon-twitter-small {
   background-image: url(sprite.png);
   background-position: -134px -48px;
   width: 15px;
   height: 13px;
+  margin-right:11px;
 }
 .icon-twitter-white {
   background-image: url(sprite.png);
@@ -100,11 +104,12 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   height: 24px;
 
 }
-.icon-youtube small {
+.icon-youtube-small {
   background-image: url(sprite.png);
   background-position: 0px -84px;
   width: 15px;
   height: 17px;
+  margin-right:11px;
 }
 .icon-youtube-white {
   background-image: url(sprite.png);
