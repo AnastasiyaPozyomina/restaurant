@@ -115,6 +115,12 @@ h1 {
   padding: 120px 140px 38px 140px;
 }
 
+h1:hover {
+  color:rgb(204, 153, 0); 
+}
+
+
+
 h2 {
   padding-top: 30px;
 }
@@ -172,55 +178,31 @@ h2 {
 }
 
 .plate-img {
-  -webkit-transform: rotate(360deg);
-  -moz-transform: rotate(360deg);
-  -ms-transform: rotate(360deg);
-  -o-transform: rotate(360deg);
+transform: rotate(360deg);
+animation-name: plate-img;
+animation-duration: 77s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-direction: normal;
+animation-delay: 0;
+animation-play-state: running;
+animation-fill-mode: forwards;
+
+}
+
+@keyframes plate-img {
+  0% {
+  transform: rotate(0deg);
+  transform: rotate(0deg);
+  }
+
+  100% {
   transform: rotate(360deg);
-  -moz-animation-name: plate-img;
-  -moz-animation-duration: 77s;
-  -webkit-animation-name: plate-img;
-  -webkit-animation-duration: 77s;
-
-  -moz-animation-timing-function: linear;
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-direction: normal;
-  -moz-animation-delay: 0;
-  -moz-animation-play-state: running;
-  -moz-animation-fill-mode: forwards;
-
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-direction: normal;
-  -webkit-animation-delay: 0;
-  -webkit-animation-play-state: running;
-  -webkit-animation-fill-mode: forwards;
-
-}
-
-@-webkit-keyframes plate-img {
-  0% {
-    -moz-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-  }
-
-  100% {
-    -moz-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
   }
 }
 
-@-moz-keyframes plate-img {
-  0% {
-    -moz-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-  }
 
-  100% {
-    -moz-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-  }
-}
 
 .ingredients {
   background: url(img/bg-ingredients.png) no-repeat;
