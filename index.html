@@ -8,31 +8,42 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="sprite.css">
+    <link rel="stylesheet" href="media.css">
     <link href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400i,700,700i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <title>Hello, world!</title>
 </head>
 
 <body>
-    <header class="header white"id="home">
+    <header class="header white" id="header">
         <div class="navbar" id="navbar">
-            <a href="index.html"> <img class="navbar-logo" src="img/Logo.png" alt="logo"></a>
-            <nav class="top-menu">
-                <ul class="menu-main">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About </a></li>
-                    <li><a href="#ingredients">Igredients </a></li>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#reviews">Reviews</a></li>
-                    <li><a href="#reservation">Reservation</a></li>
-                </ul>
-            </nav>
+            <a href="index.html" id="header-img"> <img class="header-img" src="img/Logo.png" alt="header-img"></a>
+            <div class="nav-bar-wrapper">
+                <nav class="nav-bar" id="nav-bar">
+                    <a href="#header" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About </a>
+                    <a href="#ingredients" class="nav-link">Igredients </a>
+                    <a href="#menu" class="nav-link">Menu</a>
+                    <a href="#reviews" class="nav-link">Reviews</a>
+                    <a href="#reservation" class="nav-link">Reservation</a>
+                </nav>
+                <div id="menuToggle">
+                    <input type="checkbox" />
+                    <span id="span1"></span>
+                    <span id="span2"></span>
+                    <span id="span3"></span>
+                </div>
+            </div>
+
             <div class="social">
                 <a class="icon-twitter-white" href="https://twitter.com"></a>
                 <a class="icon-youtube-white" href="https://www.youtube.com"></a>
                 <a class="icon-facebook-white" href="https://www.facebook.com"></a>
             </div>
         </div>
+
+
+
         <h1>the right ingredients
             for the right food</h1>
         <div class="icon-white-line decoration"></div>
@@ -43,7 +54,7 @@
 
     </header>
 
-   
+
     <section class="about" id="about">
         <div class="about-wrapper orange container">
             <div class="about-col">
@@ -63,151 +74,145 @@
 
     <section class="ingredients white" id="ingredients">
         <div class="container ">
-            <div class="video"><iframe width="560" height="415" src="https://www.youtube.com/embed/3wGO2Z_Zl-I"
-                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            <div class="iframe-container"><iframe id="video" width="560" height="415"
+                    src="https://www.youtube.com/embed/3wGO2Z_Zl-I" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe></div>
-            <div class="ingredients-wrapper">
-                <h2>Fine ingredients</h2>
-                <div class="icon-white-line decoration"></div>
-                <p>If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers
-                    coming back
-                    for more. Perfect materials and freshly baked food, delicious Lambda cakes, muffins, and gourmet
-                    coffees
-                    make us hard to resist! Stop in today and check us out!</p>
-                <div class="ingredient-image">
-                    <img src="img/ingredients-image.png" alt="">
-                    <img src="img/ingredients-image2.png" alt="">
-                    <img src="img/ingredients-image3.png" alt="">
-                </div>
-                <div class="popup-text-ingredients">
-                    <p> &#10003; Canary grass</p>
-                    <p> &#10003; Whole Grain Stamp</p>
-                    <p> &#10003; Dactyloctennium aegyptium</p>
-                    <p> &#10003; Algal food ingredients</p>
-                    <p> &#10003; Whole Grain Stamp
-                        &#8864;</p>
-                </div>
+       
+        <div class="ingredients-wrapper">
+            <h2>Fine ingredients</h2>
+            <div class="icon-white-line decoration"></div>
+            <p>If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers
+                coming back
+                for more. Perfect materials and freshly baked food, delicious Lambda cakes, muffins, and gourmet
+                coffees
+                make us hard to resist! Stop in today and check us out!</p>
+            <div class="ingredient-image">
+                <img src="img/ingredients-image.png" alt="">
+                <img src="img/ingredients-image2.png" alt="">
+                <img src="img/ingredients-image3.png" alt="">
             </div>
+        </div>
         </div>
     </section>
     <section class="menu" id="menu">
-        <div class="menu-list orange">
-            <div class="appetisers">
-                <h2>Appetisers</h2>
-                <div class="icon-Orange-line decoration"></div>
-                <table>
-                    <tr>
-                        <td class="title-food">Tzatsiki</td>
-                        <td class="price">$3.99</td>
-                    </tr>
-                    <tr>
-                        <td> Refreshing traditional cucumber and garlic yoghurt dip.</td>
-                    </tr>
-                    <tr>
-                        <td class="title-food">Aubergine Salad</td>
-                        <td class="price">$5.50</td>
-                    </tr>
-                    <tr>
-                        <td> Pureed eggplant, garlic, green pepper and tomato dip.</td>
-                    </tr>
-                    <tr>
-                        <td class="title-food">Aubergine Salad</td>
-                        <td class="price">$5.25</td>
-                    </tr>
-                    <tr>
-                        <td> Pureed eggplant, garlic, green pepper and tomato dip.</td>
-                    </tr>
-                </table>
-            </div>
+        <div class="container">
+            <div class="menu-list  orange">
+                <div class="appetisers">
+                    <h2>Appetisers</h2>
+                    <div class="icon-Orange-line decoration"></div>
+                    <table>
+                        <tr>
+                            <td class="title-food">Tzatsiki</td>
+                            <td class="price">$3.99</td>
+                        </tr>
+                        <tr>
+                            <td> Refreshing traditional cucumber and garlic yoghurt dip.</td>
+                        </tr>
+                        <tr>
+                            <td class="title-food">Aubergine Salad</td>
+                            <td class="price">$5.50</td>
+                        </tr>
+                        <tr>
+                            <td> Pureed eggplant, garlic, green pepper and tomato dip.</td>
+                        </tr>
+                        <tr>
+                            <td class="title-food">Aubergine Salad</td>
+                            <td class="price">$5.25</td>
+                        </tr>
+                        <tr>
+                            <td> Pureed eggplant, garlic, green pepper and tomato dip.</td>
+                        </tr>
+                    </table>
+                </div>
 
 
 
-            <div class="starters">
-                <h2>Starters</h2>
-                <div class="icon-Orange-line decoration"></div>
-                <table>
-                    <tr>
-                        <td class="title-food">Haloumi</td>
-                        <td class="price">$9.99</td>
-                    </tr>
-                    <tr>
-                        <td> Refreshing traditional cucumber and garlic yoghurt dip.</td>
-                    </tr>
-                    <tr>
-                        <td class="title-food">Spinach_Pie</td>
-                        <td class="price">$5.50</td>
-                    </tr>
-                    <tr>
-                        <td> Pureed eggplant, garlic, green pepper and tomato dip.</td>
-                    </tr>
+                <div class="starters">
+                    <h2>Starters</h2>
+                    <div class="icon-Orange-line decoration"></div>
+                    <table>
+                        <tr>
+                            <td class="title-food">Haloumi</td>
+                            <td class="price">$9.99</td>
+                        </tr>
+                        <tr>
+                            <td> Refreshing traditional cucumber and garlic yoghurt dip.</td>
+                        </tr>
+                        <tr>
+                            <td class="title-food">Spinach_Pie</td>
+                            <td class="price">$5.50</td>
+                        </tr>
+                        <tr>
+                            <td> Pureed eggplant, garlic, green pepper and tomato dip.</td>
+                        </tr>
 
-                </table>
+                    </table>
 
-            </div>
-            <div class="salads">
-                <h2>Salads</h2>
-                <div class="icon-Orange-line decoration"></div>
-                <table>
-                    <tr>
-                        <td class="title-food">Olive Special</td>
-                        <td class="price">$5.99</td>
-                    </tr>
-                    <tr>
-                        <td> Refreshing traditional cucumber and garlic yoghurt dip.</td>
-                    </tr>
-                    <tr>
-                        <td class="title-food">Greek_Salad</td>
-                        <td class="price">$5.50</td>
-                    </tr>
-                    <tr>
-                        <td> Pureed eggplant, garlic, green pepper and tomato dip.</td>
-                    </tr>
-                    <tr>
-                        <td class="title-food">Gusto_Salad</td>
-                        <td class="price">$5.25</td>
-                    </tr>
-                    <tr>
-                        <td> Pureed eggplant, garlic, green pepper and tomato dip.</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="main-dishes">
-                <h2>Main Dishes</h2>
-                <div class="icon-Orange-line decoration"></div>
-                <table>
-                    <tr>
-                        <td class="title-food">Cornish_Mackerel</td>
-                        <td class="price">$5.99</td>
-                    </tr>
-                    <tr>
-                        <td> Refreshing traditional cucumber and garlic yoghurt dip.</td>
-                    </tr>
-                    <tr>
-                        <td class="title-food">Roast Lamb</td>
-                        <td class="price">$5.50</td>
-                    </tr>
-                    <tr>
-                        <td> Pureed eggplant, garlic, green pepper and tomato dip.</td>
-                    </tr>
-                    <tr>
-                        <td class="title-food">Fried Chicken</td>
-                        <td class="price">$5.25</td>
-                    </tr>
-                    <tr>
-                        <td> Pureed eggplant, garlic, green pepper and tomato dip.</td>
-                    </tr>
-                    <tr>
-                        <td class="title-food">Pastitsio</td>
-                        <td class="price">$5.99</td>
-                    </tr>
-                    <tr>
-                        <td> Refreshing traditional cucumber and garlic yoghurt dip.</td>
-                    </tr>
-                </table>
+                </div>
+                <div class="salads">
+                    <h2>Salads</h2>
+                    <div class="icon-Orange-line decoration"></div>
+                    <table>
+                        <tr>
+                            <td class="title-food">Olive Special</td>
+                            <td class="price">$5.99</td>
+                        </tr>
+                        <tr>
+                            <td> Refreshing traditional cucumber and garlic yoghurt dip.</td>
+                        </tr>
+                        <tr>
+                            <td class="title-food">Greek_Salad</td>
+                            <td class="price">$5.50</td>
+                        </tr>
+                        <tr>
+                            <td> Pureed eggplant, garlic, green pepper and tomato dip.</td>
+                        </tr>
+                        <tr>
+                            <td class="title-food">Gusto_Salad</td>
+                            <td class="price">$5.25</td>
+                        </tr>
+                        <tr>
+                            <td> Pureed eggplant, garlic, green pepper and tomato dip.</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="main-dishes">
+                    <h2>Main Dishes</h2>
+                    <div class="icon-Orange-line decoration"></div>
+                    <table>
+                        <tr>
+                            <td class="title-food">Cornish_Mackerel</td>
+                            <td class="price">$5.99</td>
+                        </tr>
+                        <tr>
+                            <td> Refreshing traditional cucumber and garlic yoghurt dip.</td>
+                        </tr>
+                        <tr>
+                            <td class="title-food">Roast Lamb</td>
+                            <td class="price">$5.50</td>
+                        </tr>
+                        <tr>
+                            <td> Pureed eggplant, garlic, green pepper and tomato dip.</td>
+                        </tr>
+                        <tr>
+                            <td class="title-food">Fried Chicken</td>
+                            <td class="price">$5.25</td>
+                        </tr>
+                        <tr>
+                            <td> Pureed eggplant, garlic, green pepper and tomato dip.</td>
+                        </tr>
+                        <tr>
+                            <td class="title-food">Pastitsio</td>
+                            <td class="price">$5.99</td>
+                        </tr>
+                        <tr>
+                            <td> Refreshing traditional cucumber and garlic yoghurt dip.</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
-        </div>
-
     </section>
 
 
@@ -244,7 +249,7 @@
                     us
                     out! Perfect materials and freshly baked food.</p>
 
-                <form class="wrapper-form" action="" id="booking-form">
+                <form class="wrapper-form" action="https://www.freecodecamp.com/email-submit" id="form">
                     <div class="form-col">
                         <div>
                             <label for="name">Name <input type="text" id="name" required
@@ -252,13 +257,12 @@
                             <label for="date"> Date <input type="date" id="date" required placeholder="date"></label>
                         </div>
                         <div>
-                            <label for="email">Email<input type="email" id="your email" required
-                                    placeholder="email"></label>
+                            <label for="email">Email<input type="email" id="email" required placeholder="email"></label>
                             <label for="number" id="label-number">Party number<input type="number" min="0" max="12"
                                     step="1" required id="number" placeholder="party number"></label>
                         </div>
                     </div>
-                    <button class="btn-reservations" type="submit" id="booking-form">Book now!</button>
+                    <button class="btn-reservations" type="submit" id="submit">Book now!</button>
                 </form>
 
             </div>
@@ -271,7 +275,8 @@
                 <div class="footer-about-us">
                     <h3>About Us</h3>
                     <div class="icon-white-line"></div>
-                    <p>Lambda's new and expanded Chelsea location represents a truly authentic <span>Greek</span> patisserie,
+                    <p>Lambda's new and expanded Chelsea location represents a truly authentic <span>Greek</span>
+                        patisserie,
                         featuring
                         breakfasts of fresh croissants and steaming bowls of café.
                         Lamda the best restaurant in town</p>
@@ -280,25 +285,27 @@
                     <h3>Opening Hours</h3>
                     <div class="icon-white-line"></div>
                     <p><span>Mon-Thu:</span> 7:00am-8:00pm </p>
-                    <p><span>Fri-Sun:</span>  7:00am-10:00pm</p>
+                    <p><span>Fri-Sun:</span> 7:00am-10:00pm</p>
                     <p class="icon-cards"></p>
                 </div>
                 <div class="our-location">
                     <h3>Our location</h3>
                     <div class="icon-white-line"></div>
                     <p><span>19th Paradise Street Sitia
-                        128 Meserole Avenue</span></p>
-<div class="footer-social">
-    <p class="icon-facebook-small"></p>
-    <p class="icon-youtube-small"></p>
-    <p class="icon-twitter-small"></p>
-    <p class="icon-001-small"></p>
-    
-</div>
+                            128 Meserole Avenue</span></p>
+                    <div class="footer-social">
+                        <p class="icon-facebook-small"></p>
+                        <p class="icon-youtube-small"></p>
+                        <p class="icon-twitter-small"></p>
+                        <p class="icon-001-small"></p>
+
+                    </div>
                 </div>
             </div>
     </footer>
+
     <script src="js.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
 </html>
