@@ -8,16 +8,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="sprite.css">
-    <link rel="stylesheet" href="media.css">
     <link href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400i,700,700i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <title>Hello, world!</title>
+    <title>Product Landing Page</title>
 </head>
 
 <body>
     <header class="header white" id="header">
         <div class="navbar" id="navbar">
-            <a href="index.html" id="header-img"> <img class="header-img" src="img/Logo.png" alt="header-img"></a>
+            <a href="index.html"> <img class="header-img" src="img/Logo.png" alt="header-img" id="header-img"></a>
+
             <div class="nav-bar-wrapper">
                 <nav class="nav-bar" id="nav-bar">
                     <a href="#header" class="nav-link">Home</a>
@@ -26,13 +26,8 @@
                     <a href="#menu" class="nav-link">Menu</a>
                     <a href="#reviews" class="nav-link">Reviews</a>
                     <a href="#reservation" class="nav-link">Reservation</a>
+
                 </nav>
-                <div id="menuToggle">
-                    <input type="checkbox" />
-                    <span id="span1"></span>
-                    <span id="span2"></span>
-                    <span id="span3"></span>
-                </div>
             </div>
 
             <div class="social">
@@ -40,8 +35,22 @@
                 <a class="icon-youtube-white" href="https://www.youtube.com"></a>
                 <a class="icon-facebook-white" href="https://www.facebook.com"></a>
             </div>
-        </div>
 
+            <div id="main" class="burger-menu">
+                <span class="title"></span>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About </a></li>
+                    <li><a href="#ingredients">Igredients </a></li>
+                    <li><a href="#menu" >Menu</a></li>
+                    <li> <a href="#reviews" >Reviews</a></li>
+                    <li>  <a href="#reservation">Reservation</a></li>
+                </ul>
+            </div>
+
+
+
+        </div>
 
 
         <h1>the right ingredients
@@ -262,7 +271,7 @@
                                     step="1" required id="number" placeholder="party number"></label>
                         </div>
                     </div>
-                    <button class="btn-reservations" type="submit" id="submit">Book now!</button>
+                    <button class="btn-reservations" type="submit" id="submit" action="https://www.freecodecamp.com/email-submit">Book now!</button>
                 </form>
 
             </div>
