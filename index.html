@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, width=576">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
     <link rel="stylesheet" href="style.css">
@@ -42,9 +42,9 @@
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About </a></li>
                     <li><a href="#ingredients">Igredients </a></li>
-                    <li><a href="#menu" >Menu</a></li>
-                    <li> <a href="#reviews" >Reviews</a></li>
-                    <li>  <a href="#reservation">Reservation</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li> <a href="#reviews">Reviews</a></li>
+                    <li> <a href="#reservation">Reservation</a></li>
                 </ul>
             </div>
 
@@ -75,7 +75,7 @@
                     for more. Perfect materials and freshly baked food, delicious Lambda cakes, muffins, and gourmet
                     coffees
                     make us hard to resist! Stop in today and check us out!</p>
-                <img src="img/cook.png" alt="">
+                <div class="cook-img"><img src="img/cook.png" alt=""></div>
             </div>
             <div class="plate-img"><img src="img/dish.png" alt=""></div>
         </div>
@@ -86,24 +86,25 @@
             <div class="iframe-container"><iframe id="video" width="560" height="415"
                     src="https://www.youtube.com/embed/3wGO2Z_Zl-I" frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe></div>
-       
-        <div class="ingredients-wrapper">
-            <h2>Fine ingredients</h2>
-            <div class="icon-white-line decoration"></div>
-            <p>If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers
-                coming back
-                for more. Perfect materials and freshly baked food, delicious Lambda cakes, muffins, and gourmet
-                coffees
-                make us hard to resist! Stop in today and check us out!</p>
-            <div class="ingredient-image">
-                <img src="img/ingredients-image.png" alt="">
-                <img src="img/ingredients-image2.png" alt="">
-                <img src="img/ingredients-image3.png" alt="">
+                    allowfullscreen></iframe>
+            </div>
+            <div class="ingredients-wrapper">
+                <h2>Fine ingredients</h2>
+                <div class="icon-white-line decoration"></div>
+                <p>If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers
+                    coming back
+                    for more. Perfect materials and freshly baked food, delicious Lambda cakes, muffins, and gourmet
+                    coffees
+                    make us hard to resist! Stop in today and check us out!</p>
+                <div class="ingredient-image">
+                    <img src="img/ingredients-image.png" alt="">
+                    <img src="img/ingredients-image2.png" alt="">
+                    <img src="img/ingredients-image3.png" alt="">
+                </div>
             </div>
         </div>
-        </div>
     </section>
+
     <section class="menu" id="menu">
         <div class="container">
             <div class="menu-list  orange">
@@ -258,20 +259,23 @@
                     us
                     out! Perfect materials and freshly baked food.</p>
 
-                <form class="wrapper-form" action="https://www.freecodecamp.com/email-submit" id="form">
+                <form class="wrapper-form" id="form" action="https://www.freecodecamp.com/email-submit" target="_blank">
                     <div class="form-col">
                         <div>
                             <label for="name">Name <input type="text" id="name" required
-                                    placeholder="your name"></label>
-                            <label for="date"> Date <input type="date" id="date" required placeholder="date"></label>
+                                    placeholder="your name"></input></label>
+                            <label for="date"> Date <input type="date" id="date" required
+                                    placeholder="date"></input></label>
                         </div>
                         <div>
-                            <label for="email">Email<input type="email" id="email" required placeholder="email"></label>
+                            <label for="email">Email<input type="email" id="email" name="email" required
+                                    placeholder="email"></label>
                             <label for="number" id="label-number">Party number<input type="number" min="0" max="12"
-                                    step="1" required id="number" placeholder="party number"></label>
+                                    step="1" required id="number" placeholder="party number"></input></label>
                         </div>
                     </div>
-                    <button class="btn-reservations" type="submit" id="submit" action="https://www.freecodecamp.com/email-submit">Book now!</button>
+                    <input type="submit" id="submit" target="_blank" value="Book now!" class="btn-reservations"></input>
+
                 </form>
 
             </div>

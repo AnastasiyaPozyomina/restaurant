@@ -39,8 +39,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   background-position: 0px -48px;
   width: 120px;
   height: 15px;
-  margin-left:61.39px;
-  margin-top:47.99px;
+  margin: 47px auto;
 }
 .icon-facebook-orange {
   background-image: url(sprite.png);
