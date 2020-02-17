@@ -1,5 +1,3 @@
-@charset "utf-8";
-
 html,
 body {
   font-size: 16px;
@@ -30,16 +28,22 @@ header {
 
 /* мобильное меню */
 #main {
-  padding: 20px;
-  position: fixed;
-  margin-top: 15px;
   display: none;
+  top: 10px;
+
+  position: fixed;
+  width: 100%;
+  text-align: center;
+
 }
+
+
 
 #main a {
   text-decoration: none;
   padding: 20px;
   font-size: 32px;
+  -ms-flex-wrap: bold;
   flex-wrap: bold;
 
 }
@@ -57,8 +61,8 @@ header {
 .burger-menu ul {
   margin: 0;
   list-style: none;
-  padding-right: 20px;
   display: none;
+  padding-top: 100px;
 
 }
 
@@ -66,24 +70,37 @@ header {
   font-size: 25px;
   cursor: pointer;
   color: #fefefe;
+  top: 10px;
+  right: 10px;
+  position: fixed;
 }
 
 .burger-menu .title::before {
   content: '☰';
   color: #fefefe;
-  font-size: 50px;
+  font-size: 60px;
+
 }
+
 
 /* меню раскрыто */
 .burger-menu.open .title::before {
   content: '🞬';
   color: #fefefe;
+  position: fixed;
+  right: 10px;
+  top: 10px;
 
 
 }
 
 .burger-menu.open ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 
 
@@ -99,7 +116,11 @@ header {
 
 /* меню */
 .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   position: fixed;
   top: 0;
@@ -123,6 +144,8 @@ header {
 }
 
 .header-img:hover {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
   transform: scale(0.8);
 }
 
@@ -143,8 +166,12 @@ header {
 }
 
 .menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0 auto;
 
@@ -160,6 +187,8 @@ header {
 }
 
 .menu-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   list-style: none;
 }
@@ -176,12 +205,15 @@ header {
 .nav-link:hover {
   border-top: #fefefe 2px solid;
   font-weight: bold;
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
   transform: scale(0.8);
-
 
 }
 
-
+.nav-bar-wrapper {
+  display: block;
+}
 
 a {
   text-decoration: none;
@@ -192,6 +224,7 @@ a {
 /* Шрифт */
 h1 {
   font-size: 90px;
+
   font-family: "YesevaOne";
   color: rgba(255, 255, 255, 0.922);
   text-align: center;
@@ -258,7 +291,12 @@ h2 {
 
 
 .about-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: nowrap row;
   flex-flow: nowrap row;
 
 }
@@ -274,25 +312,51 @@ h2 {
 }
 
 .plate-img {
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
   transform: rotate(360deg);
+  -webkit-animation-name: plate-img;
   animation-name: plate-img;
+  -webkit-animation-duration: 77s;
   animation-duration: 77s;
+  -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
   animation-direction: normal;
+  -webkit-animation-delay: 0;
   animation-delay: 0;
+  -webkit-animation-play-state: running;
   animation-play-state: running;
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   margin-top: 40px;
 }
 
-@keyframes plate-img {
+@-webkit-keyframes plate-img {
   0% {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
     transform: rotate(0deg);
   }
 
   100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes plate-img {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
     transform: rotate(360deg);
   }
@@ -311,11 +375,18 @@ h2 {
 }
 
 .ingredients .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: nowrap row;
   flex-flow: nowrap row;
   padding-top: 100px;
   padding-bottom: 100px;
   margin-bottom: -10px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -325,6 +396,7 @@ h2 {
   color: rgb(255, 255, 255);
   line-height: 1.5;
   text-align: center;
+  -ms-flex-line-pack: justify;
   align-content: space-between;
   margin-bottom: 53px;
 }
@@ -340,8 +412,14 @@ h2 {
 
 .ingredient-image {
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
 }
 
@@ -445,7 +523,11 @@ td {
 }
 
 .reservations .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -458,13 +540,15 @@ td {
   margin: 0 auto;
 }
 
-.booking {
-  width: 430px;
 
-}
 
 .reservations-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
 
 }
@@ -492,13 +576,19 @@ td {
 }
 
 .form-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
 
 }
 
 input {
   width: 200px;
+
   margin-right: 30px;
   margin-left: 0;
   margin-top: 9.5px;
@@ -506,9 +596,45 @@ input {
   margin-bottom: 27px;
 }
 
+input::-webkit-input-placeholder {
+  width: 200px;
+
+}
+
+input::-moz-placeholder {
+  width: 200px;
+
+}
+
+input:-ms-input-placeholder {
+  width: 200px;
+
+}
+
+input::-ms-input-placeholder {
+  width: 200px;
+
+}
+
 input::placeholder {
   width: 200px;
 
+}
+
+input::-webkit-input-placeholder:hover {
+  border-color: rgb(201, 161, 49);
+}
+
+input::-moz-placeholder:hover {
+  border-color: rgb(201, 161, 49);
+}
+
+input:-ms-input-placeholder:hover {
+  border-color: rgb(201, 161, 49);
+}
+
+input::-ms-input-placeholder:hover {
+  border-color: rgb(201, 161, 49);
 }
 
 input::placeholder:hover {
@@ -578,9 +704,11 @@ label {
 
 /* иконки */
 .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  margin: 45px 40px 35px 30px;
-  padding-right: 20px;
+  margin: 45px 5px 35px 5px;
+
 
 }
 
@@ -605,7 +733,11 @@ footer {
 }
 
 .footer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   width: 100%;
 }
@@ -622,8 +754,15 @@ footer h3 {
 
 
 .footer-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin-top: 43px;
 
@@ -663,26 +802,73 @@ footer span {
 /* Media */
 
 
+/* Малые девайсы («ландшафтные телефоны», >= 576px) */
 
+@media (max-width: 380px) {
+  .btn-white {
+    margin-right: 0;
+  }
+  .social {
+    display: none;
+  }
 
-/* 
- Малые девайсы («ландшафтные телефоны», >= 576px) */
+  .icon-white-line {
+    display: none;
+  }
+  .ingredients-wrapper h2 {
+    margin-bottom: 20px;
+  }
 
-@media (max-width: 576px) {}
+  .ingredients-wrapper {
+    padding: 0;
+    max-width: 287px;
+  }
+
+ .orange h2 {
+    line-height: 1.2;
+  }
+
+  .quote {
+    height:20.49px;
+    width:29.5px;
+    padding-top: 10px;
+  }
+
+  .reviews-wrapper {
+    padding: 0;
+  }
+  
+
 
 @media (max-width: 576px) {
   h1 {
-    font-size: 25px;
+    font-size: 14px;
   }
 
   header .decoration {
     display: none;
+
+  
   }
 
   .btn-header {
     margin-top: 10px;
     margin-bottom: 15px;
   }
+
+  .header-img {
+    margin-left: 0;
+    width: 60%;
+    height: auto;
+  }
+
+.navbar {
+  height: 100px;
+}
+
+.ingredients-wrapper {
+  width: 100%;
+}
 }
 
 
@@ -692,6 +878,8 @@ footer span {
   h1 {
     font-size: 40px;
     margin-top: 50px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .btn-header {
@@ -711,11 +899,28 @@ footer span {
     display: none;
   }
 
+  .form-col {
+    flex-direction: column;
+
+  }
+
+  input {
+    width: 100%;
+  }
+
+  .btn-reservations {
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 826px) {
   .footer-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 
   }
@@ -738,7 +943,12 @@ footer span {
   }
 
   .ingredients .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
 
   }
@@ -752,22 +962,24 @@ footer span {
     margin: 0 auto;
   }
 
+
+
 }
 
 @media (max-width: 1065px) {
-  .nav-bar {
+  .nav-bar-wrapper {
     display: none;
   }
 
   #main {
     display: block;
-    margin-left: 15px;
-    margin-right: 10px;
   }
 
   h1 {
-    font-size: 70px;
+    font-size: 5,6rem;
+    margin: 0;
   }
+
 
 }
 
@@ -793,12 +1005,24 @@ footer span {
     text-align: end;
   }
 
+  .main-dishes h2 {
+    margin-top: 40px;
+  }
+
+  .menu {
+    padding-left: 0;
+  }
+
+  .booking {
+    padding-left: 0;
+  }
+
+
 }
 
 @media (max-width: 1300px) {
   .reservations .container {
+    -ms-flex-wrap: wrap-reverse;
     flex-wrap: wrap-reverse;
   }
-
-
 }
