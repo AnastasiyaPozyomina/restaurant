@@ -708,8 +708,6 @@ label {
   display: -ms-flexbox;
   display: flex;
   margin: 45px 5px 35px 5px;
-
-
 }
 
 .social a {
@@ -808,13 +806,12 @@ footer span {
   .btn-white {
     margin-right: 0;
   }
-  .social {
-    display: none;
-  }
+
 
   .icon-white-line {
     display: none;
   }
+
   .ingredients-wrapper h2 {
     margin-bottom: 20px;
   }
@@ -824,21 +821,21 @@ footer span {
     max-width: 287px;
   }
 
- .orange h2 {
+  .orange h2 {
     line-height: 1.2;
   }
 
   .quote {
-    height:20.49px;
-    width:29.5px;
+    height: 20.49px;
+    width: 29.5px;
     padding-top: 10px;
   }
 
   .reviews-wrapper {
     padding: 0;
   }
-  
 
+}
 
 @media (max-width: 576px) {
   h1 {
@@ -848,7 +845,7 @@ footer span {
   header .decoration {
     display: none;
 
-  
+
   }
 
   .btn-header {
@@ -862,13 +859,13 @@ footer span {
     height: auto;
   }
 
-.navbar {
-  height: 100px;
-}
+  .navbar {
+    height: 100px;
+  }
 
-.ingredients-wrapper {
-  width: 100%;
-}
+  .ingredients-wrapper {
+    width: 100%;
+  }
 }
 
 
@@ -976,10 +973,12 @@ footer span {
   }
 
   h1 {
-    font-size: 5,6rem;
+    font-size: 60px;
     margin: 0;
   }
-
+ .social {
+   margin-right: 50px;
+ }
 
 }
 
