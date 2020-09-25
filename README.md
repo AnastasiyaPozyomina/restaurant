@@ -1,5 +1,5 @@
 <h1><a href="https://anastasiyapozyomina.github.io/restaurant/">Product Landing Page - Project №3 for freeCodeCamp</a></h1>
-
+<a href="https://anastasiyapozyomina.github.io/restaurant/">demo</a>
 <h2>Used:</h2>
 <ul>
 <li>HTML</li>
